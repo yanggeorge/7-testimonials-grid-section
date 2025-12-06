@@ -32,7 +32,7 @@ html,
 body {
   font-family: "Barlow Semi Condensed", sans-serif;
   letter-spacing: 0px;
-  background-color: var(--color-cream);
+  background-color: #f6f5f6;
 }
 
 body {
@@ -113,7 +113,10 @@ main {
 .daniel {
   background-color: var(--color-purple-500);
 }
-
+.daniel img {
+  border-style: solid;
+  border-color: #a775f1;
+}
 .daniel .name {
   color: var(--color-white);
 }
@@ -156,5 +159,37 @@ main {
   color: var(--color-grey-500);
 }
 .jeanette .desc {
+  color: var(--color-grey-400);
+}
+
+.patrick {
+  background-color: var(--color-dark-blue);
+}
+.patrick .name {
+  color: var(--color-white);
+}
+.patrick .status {
+  color: var(--color-white);
+}
+.patrick .title {
+  color: var(--color-grey-200);
+}
+.patrick .desc {
+  color: var(--color-grey-100);
+}
+
+.kira {
+  background-color: var(--color-white);
+}
+.kira .name {
+  color: var(--color-grey-500);
+}
+.kira .status {
+  color: var(--color-grey-400);
+}
+.kira .title {
+  color: var(--color-grey-500);
+}
+.kira .desc {
   color: var(--color-grey-400);
 }
