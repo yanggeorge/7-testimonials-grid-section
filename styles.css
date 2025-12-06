@@ -114,7 +114,11 @@ main {
   background-color: var(--color-purple-500);
 }
 .daniel img {
-  border: 2px solid #a775f1;
+  /* 2px 实线 */
+  outline: 2px solid #a775f1;
+
+  /* 关键点：负值将轮廓拉到图片内部 */
+  outline-offset: 2px;
 }
 .daniel .name {
   color: var(--color-white);
