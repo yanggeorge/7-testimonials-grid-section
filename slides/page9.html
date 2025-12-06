@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Noto Sans SC', sans-serif;
+            color: #333;
+            background-color: #f8f8f8;
+            overflow: hidden;
+        }
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            display: flex;
+            flex-direction: column;
+            background-color: #f8f8f8;
+            position: relative;
+        }
+        .header {
+            background-color: #b71c1c;
+            color: white;
+            padding: 20px 40px;
+            font-size: 32px;
+            font-weight: 700;
+        }
+        .content {
+            flex: 1;
+            padding: 30px 40px;
+            display: flex;
+            flex-direction: column;
+        }
+        .timeline-container {
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+            position: relative;
+            flex: 1;
+        }
+        .timeline-path {
+            position: absolute;
+            top: 110px;
+            left: 40px;
+            right: 40px;
+            height: 4px;
+            background-color: #d32f2f;
+            z-index: 1;
+        }
+        .timeline-steps {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            z-index: 2;
+            margin-bottom: 30px;
+        }
+        .timeline-step {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 32%;
+        }
+        .timeline-point {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background-color: #b71c1c;
+            margin-bottom: 15px;
+            border: 4px solid white;
+            box-shadow: 0 0 0 2px #b71c1c;
+        }
+        .timeline-date {
+            font-weight: 700;
+            color: #b71c1c;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        .timeline-title {
+            font-weight: 700;
+            font-size: 22px;
+            margin-bottom: 15px;
+            text-align: center;
+            color: #333;
+        }
+        .timeline-content {
+            text-align: center;
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+        .timeline-image {
+            width: 250px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 4px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .arrow-right {
+            width: 40px;
+            height: 40px;
+            color: #b71c1c;
+            position: absolute;
+            top: 100px;
+            font-size: 40px;
+            z-index: 3;
+        }
+        .arrow-1 {
+            left: 30%;
+        }
+        .arrow-2 {
+            left: 64%;
+        }
+        .subtitle {
+            font-size: 18px;
+            color: #666;
+            margin-top: 5px;
+            margin-bottom: 20px;
+        }
+        .spirit-quote {
+            padding: 20px 40px;
+            background-color: rgba(183, 28, 28, 0.1);
+            border-left: 4px solid #b71c1c;
+            margin-top: 20px;
+            font-style: italic;
+            font-size: 18px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+<div class="slide-container">
+<div class="header">
+            从爱国学生到抗日战士
+        </div>
+<div class="content">
+<p class="subtitle">一二·九运动后，青年学生走上救国救亡的实践之路</p>
+<div class="timeline-container">
+<div class="timeline-path"></div>
+<div class="arrow-right arrow-1">→</div>
+<div class="arrow-right arrow-2">→</div>
+<div class="timeline-steps">
+<div class="timeline-step">
+<div class="timeline-point"></div>
+<div class="timeline-date">1936年1月</div>
+<div class="timeline-title">南下扩大宣传团</div>
+<p class="timeline-content">北平学联组织"南下扩大宣传团"，深入农村宣传抗日救亡。学生们冒着严寒，走进工厂、乡村，开展抗日宣传工作。</p>
+<img alt="南下宣传团照片" class="timeline-image" src="https://page.gensparksite.com/slides_images/671fb74d1148a3d0950955b62343439b.webp"/>
+</div>
+<div class="timeline-step">
+<div class="timeline-point"></div>
+<div class="timeline-date">1936-1937年</div>
+<div class="timeline-title">奔赴延安</div>
+<p class="timeline-content">大批青年学生投笔从戎，不顾重重艰难险阻，奔赴革命圣地延安，接受马列主义和革命理论的系统学习。</p>
+<img alt="奔赴延安的青年照片" class="timeline-image" src="https://page.gensparksite.com/slides_images/6136be19b821f591a01617420537c591.webp"/>
+</div>
+<div class="timeline-step">
+<div class="timeline-point"></div>
+<div class="timeline-date">1937-1945年</div>
+<div class="timeline-title">投身抗战</div>
+<p class="timeline-content">一二·九运动的参与者成为抗日战争和解放战争的中坚力量，他们在战场上浴血奋战，为民族独立和人民解放事业做出巨大贡献。</p>
+<img alt="抗战中的青年志士" class="timeline-image" src="https://page.gensparksite.com/slides_images/b0c4e52a79050b022f822ac5152ecc97.webp"/>
+</div>
+</div>
+</div>
+<div class="spirit-quote">
+<p>"一二·九一代"的青年学生，以天下为己任的爱国主义精神，把个人命运与国家民族的命运紧密相连，成为中国革命的中坚力量，谱写了中国青年救国救亡的壮丽篇章。</p>
+</div>
+</div>
+</div>
+</body>
+</html>

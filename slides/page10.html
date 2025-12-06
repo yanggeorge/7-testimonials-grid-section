@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>结语——铭记历史，吾辈自强</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Noto Sans SC', sans-serif;
+    }
+    .slide-container {
+      position: relative;
+      width: 1280px;
+      min-height: 720px;
+      display: flex;
+      overflow: hidden;
+    }
+    .half-container {
+      width: 50%;
+      position: relative;
+      overflow: hidden;
+    }
+    .half-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .history-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+    .modern-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(187, 16, 16, 0.6);
+    }
+    .content-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 2rem;
+      color: white;
+      z-index: 10;
+    }
+    .half-title {
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    .half-text {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    }
+    .center-panel {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 60%;
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+      z-index: 20;
+      text-align: center;
+    }
+    .main-title {
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: #bb1010;
+      margin-bottom: 1.5rem;
+      line-height: 1.2;
+    }
+    .summary-text {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      color: #333;
+      margin-bottom: 1.5rem;
+    }
+    .final-quote {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #bb1010;
+      margin-top: 1.5rem;
+      border-top: 2px solid rgba(187, 16, 16, 0.3);
+      padding-top: 1.5rem;
+    }
+    .image-caption {
+      position: absolute;
+      bottom: 1rem;
+      font-size: 0.8rem;
+      color: rgba(255, 255, 255, 0.8);
+      text-align: center;
+      width: 90%;
+      left: 5%;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    }
+    .year-tag {
+      position: absolute;
+      top: 1.5rem;
+      background-color: rgba(0, 0, 0, 0.6);
+      color: white;
+      padding: 0.5rem 1.5rem;
+      font-weight: 700;
+      font-size: 1.2rem;
+      border-radius: 0 4px 4px 0;
+    }
+    .year-tag.history {
+      left: 0;
+    }
+    .year-tag.modern {
+      right: 0;
+      border-radius: 4px 0 0 4px;
+      background-color: rgba(187, 16, 16, 0.8);
+    }
+</style>
+</head>
+<body>
+<div class="slide-container">
+<div class="half-container">
+<img alt="1935年一二九运动历史照片" class="half-image" src="https://page.gensparksite.com/slides_images/463c0b225dec9333893f7f43fcadb6ab.webp"/>
+<div class="history-overlay"></div>
+<div class="year-tag history">1935</div>
+<div class="content-wrapper">
+<h2 class="half-title">历史的回响</h2>
+<p class="half-text">八十多年前，爱国学生在北平街头高呼"停止内战，一致对外"，掀起了全民族抗日救亡的浪潮。</p>
+<p class="half-text">那是一场青年力量的觉醒，点燃了民族救亡图存的星星之火。</p>
+<p class="image-caption">1935年12月，北平学生在抗日救亡游行中</p>
+</div>
+</div>
+<div class="half-container">
+<img alt="现代中国天安门广场" class="half-image" src="https://page.gensparksite.com/slides_images/9695eea3bc19bc9002fc61f8e2c8166d.webp"/>
+<div class="modern-overlay"></div>
+<div class="year-tag modern">2025</div>
+<div class="content-wrapper">
+<h2 class="half-title">今日的力量</h2>
+<p class="half-text">今天的我们不再面对战火，但仍需传承那份爱国热忱与民族责任。</p>
+<p class="half-text">新时代的青年肩负着民族复兴的重任，以实际行动书写着新的华章。</p>
+<p class="image-caption">今日的天安门广场，见证着中华民族的伟大复兴</p>
+</div>
+</div>
+<div class="center-panel">
+<h1 class="main-title">结语——铭记历史，吾辈自强</h1>
+<p class="summary-text">一二·九运动是抗战动员的号角，是中国青年爱国救亡的壮举。它唤醒了沉睡的民族，促进了抗日民族统一战线的形成，推动了中华民族走向抗战胜利的道路。</p>
+<p class="summary-text">历史告诉我们，青年是民族的希望，爱国是青年的本色。虽然时代变迁，但爱国主义精神永远是激励中国人民前进的力量源泉。</p>
+<p class="final-quote">勿忘国耻，振兴中华！</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>共产党的领导作用</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Noto Sans SC', sans-serif;
+    }
+    .slide-container {
+      width: 1280px;
+      min-height: 720px;
+      background-color: #f8f8f8;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+    .header {
+      padding: 1.5rem 3rem;
+      background-color: #f0f0f0;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    .title {
+      font-size: 2.75rem;
+      font-weight: 800;
+      color: #bb1010;
+    }
+    .subtitle {
+      font-size: 1.3rem;
+      color: #555;
+      font-weight: 500;
+      margin-top: 0.25rem;
+    }
+    .content {
+      flex: 1;
+      padding: 1rem 3rem 2rem;
+      display: flex;
+      flex-direction: column;
+    }
+    .org-chart {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 1.5rem;
+      position: relative;
+    }
+    .org-node {
+      background-color: #fff;
+      border: 2px solid #bb1010;
+      border-radius: 8px;
+      padding: 0.8rem 1.5rem;
+      text-align: center;
+      margin: 0.5rem 0;
+      min-width: 240px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      z-index: 2;
+    }
+    .org-node h3 {
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: #bb1010;
+      margin: 0;
+    }
+    .org-node p {
+      font-size: 0.9rem;
+      margin: 0.25rem 0 0;
+      color: #555;
+    }
+    .org-level {
+      display: flex;
+      justify-content: center;
+      margin: 1rem 0;
+      gap: 3rem;
+      position: relative;
+      z-index: 2;
+    }
+    .connection-line {
+      position: absolute;
+      background-color: #bb1010;
+      z-index: 1;
+    }
+    .vertical-line {
+      width: 2px;
+      height: 2rem;
+      left: calc(50% - 1px);
+    }
+    .horizontal-line {
+      height: 2px;
+    }
+    .people-cards {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+    .person-card {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+      width: 180px;
+      overflow: hidden;
+      transition: transform 0.2s;
+    }
+    .person-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    }
+    .person-image {
+      width: 100%;
+      height: 160px;
+      background-color: #e0e0e0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-bottom: 3px solid #bb1010;
+    }
+    .person-icon {
+      color: #bb1010;
+      font-size: 4rem;
+    }
+    .person-info {
+      padding: 0.8rem;
+    }
+    .person-info h4 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #333;
+      margin: 0 0 0.25rem 0;
+    }
+    .person-info p {
+      font-size: 0.9rem;
+      color: #555;
+      margin: 0;
+      line-height: 1.4;
+    }
+    .note-box {
+      background-color: #f0f0f0;
+      border-left: 4px solid #bb1010;
+      padding: 1rem 1.5rem;
+      margin: 1rem 2rem;
+      border-radius: 0 4px 4px 0;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+    .note-box p {
+      margin: 0;
+      font-size: 1rem;
+      color: #333;
+      line-height: 1.6;
+    }
+    .highlight {
+      color: #bb1010;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+<div class="slide-container">
+<div class="header">
+<h1 class="title">共产党的领导作用</h1>
+<p class="subtitle">运动并非完全自发，而是在中国共产党领导下有组织进行的</p>
+</div>
+<div class="content">
+<div class="org-chart">
+<!-- 顶层组织 -->
+<div class="org-node">
+<h3>中共北平临时工作委员会</h3>
+<p>1935年夏成立，是一二·九运动的总指挥部</p>
+</div>
+<!-- 连接线 -->
+<div class="connection-line vertical-line" style="top: 5.2rem; height: 2rem;"></div>
+<!-- 二级组织 -->
+<div class="org-level">
+<div class="org-node">
+<h3>北平大中学校学生联合会</h3>
+<p>简称"北平学联"，学生运动的直接领导组织</p>
+</div>
+<div class="org-node">
+<h3>中华民族武装自卫委员会</h3>
+<p>简称"武卫会"，为运动提供思想和组织准备</p>
+</div>
+</div>
+<!-- 连接线 -->
+<div class="connection-line horizontal-line" style="top: 8.2rem; width: 240px; left: calc(50% - 120px);"></div>
+</div>
+<div class="note-box">
+<p>一二·九运动看似学生自发，实则是中共地下党组织精心策划的结果。当时整个北平仅有不到20名共产党员和团员，却能发动和领导数千名学生举行声势浩大的抗日救亡运动，展现了中国共产党<span class="highlight">卓越的组织能力和群众工作能力</span>。</p>
+</div>
+<div class="people-cards">
+<div class="person-card">
+<div class="person-image">
+<i class="fas fa-user-circle person-icon"></i>
+</div>
+<div class="person-info">
+<h4>彭真</h4>
+<p>中共北平市委书记，运动后期总负责人，指导运动全局</p>
+</div>
+</div>
+<div class="person-card">
+<div class="person-image">
+<i class="fas fa-user-circle person-icon"></i>
+</div>
+<div class="person-info">
+<h4>彭涛</h4>
+<p>辅仁大学学生，中共北平临时工委宣传部长，运动初期实际负责人</p>
+</div>
+</div>
+<div class="person-card">
+<div class="person-image">
+<i class="fas fa-user-circle person-icon"></i>
+</div>
+<div class="person-info">
+<h4>林枫</h4>
+<p>1935年12月20日任中共北平市委书记，加强对运动的领导</p>
+</div>
+</div>
+<div class="person-card">
+<div class="person-image">
+<i class="fas fa-user-circle person-icon"></i>
+</div>
+<div class="person-info">
+<h4>黄敬</h4>
+<p>北大学生，负责武卫会工作，运动中担任前线工作</p>
+</div>
+</div>
+<div class="person-card">
+<div class="person-image">
+<i class="fas fa-user-circle person-icon"></i>
+</div>
+<div class="person-info">
+<h4>姚依林</h4>
+<p>清华大学学生，年仅18岁，负责清华暑期同学会工作</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>运动高潮——12月16日大示威</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Noto Sans SC', sans-serif;
+    }
+    .slide-container {
+      position: relative;
+      width: 1280px;
+      min-height: 720px;
+      overflow: hidden;
+    }
+    .background-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: grayscale(100%) brightness(0.7);
+    }
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.65);
+    }
+    .content {
+      position: relative;
+      z-index: 10;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      padding: 3rem 4rem;
+      color: white;
+    }
+    .header {
+      margin-bottom: 2rem;
+    }
+    .title {
+      font-size: 3rem;
+      font-weight: 800;
+      margin-bottom: 1rem;
+      color: white;
+      text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    .subtitle {
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: #f8f8f8;
+      text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+    }
+    .event-details {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    .details-box {
+      background-color: rgba(187, 16, 16, 0.75);
+      padding: 1.5rem 2rem;
+      border-radius: 8px;
+      width: 45%;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+    .details-title {
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+      padding-bottom: 0.5rem;
+    }
+    .details-content {
+      font-size: 1.2rem;
+      line-height: 1.6;
+    }
+    .bullet-list {
+      list-style-type: none;
+      padding-left: 0;
+      margin: 0;
+    }
+    .bullet-list li {
+      position: relative;
+      padding-left: 1.5rem;
+      margin-bottom: 0.8rem;
+    }
+    .bullet-list li:before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: #f8f8f8;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+    .image-credit {
+      position: absolute;
+      bottom: 1rem;
+      right: 1rem;
+      font-size: 0.8rem;
+      color: rgba(255, 255, 255, 0.7);
+      z-index: 10;
+    }
+    .highlight {
+      color: #ffcc00;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+<div class="slide-container">
+<img alt="1935年12月16日北平学生大规模示威游行" class="background-image" src="https://page.gensparksite.com/slides_images/6136be19b821f591a01617420537c591.webp"/>
+<div class="overlay"></div>
+<div class="content">
+<div class="header">
+<h1 class="title">运动高潮——12月16日大示威</h1>
+<p class="subtitle">抗日怒潮汇成巨大洪流的时刻</p>
+</div>
+<div class="event-details">
+<div class="details-box">
+<h2 class="details-title">背景与规模</h2>
+<div class="details-content">
+<ul class="bullet-list">
+<li><span class="highlight">背景</span>：为了抗议原定于12月16日成立的"冀察政务委员会"</li>
+<li><span class="highlight">规模</span>：北平学生和市民约1万余人，远超9日游行</li>
+<li><span class="highlight">组织</span>：四个大队分别由东北大学、中国大学、北京大学、清华大学率领</li>
+</ul>
+</div>
+</div>
+<div class="details-box">
+<h2 class="details-title">行动与成效</h2>
+<div class="details-content">
+<ul class="bullet-list">
+<li>市民、工人积极加入，形成更大规模抗日力量</li>
+<li>学生冲破城门封锁，在天桥召开了市民大会</li>
+<li>游行队伍分散行动，避免被军警一网打尽</li>
+<li><span class="highlight">成果</span>：迫使"冀察政务委员会"延期成立，运动取得初步胜利</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<p class="image-credit">图片：1935年北平学生抗日示威游行历史照片</p>
+</div>
+</body>
+</html>
