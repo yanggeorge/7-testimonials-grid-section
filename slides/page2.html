@@ -1,151 +1,173 @@
 <!DOCTYPE html>
 
 <html lang="zh-CN">
+
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>历史背景——华北之大，安放不下一张平静的书桌</title>
-<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
-<style>
-    body, html {
-      margin: 0;
-      padding: 0;
-      font-family: 'Noto Sans SC', sans-serif;
-    }
-    .slide-container {
-      position: relative;
-      width: 1280px;
-      min-height: 720px;
-      display: flex;
-      background-color: #f5f5f5;
-      overflow: hidden;
-    }
-    .left-column {
-      width: 50%;
-      padding: 3rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      background-color: #f9f9f9;
-    }
-    .right-column {
-      width: 50%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      background-color: #f0f0f0;
-      position: relative;
-      overflow: hidden;
-    }
-    .title {
-      color: #bb1010;
-      font-size: 2.5rem;
-      font-weight: 700;
-      margin-bottom: 2rem;
-      line-height: 1.2;
-    }
-    .section-title {
-      color: #bb1010;
-      font-size: 1.5rem;
-      font-weight: 700;
-      margin-top: 1.5rem;
-      margin-bottom: 0.5rem;
-    }
-    .content-text {
-      font-size: 1.25rem;
-      line-height: 1.6;
-      margin-bottom: 1rem;
-    }
-    .quote {
-      border-left: 4px solid #bb1010;
-      padding-left: 1rem;
-      margin: 1.5rem 0;
-      font-style: italic;
-      color: #333;
-    }
-    .quote-text {
-      font-size: 1.4rem;
-      line-height: 1.6;
-    }
-    .quote-source {
-      font-size: 1rem;
-      margin-top: 0.5rem;
-      color: #555;
-    }
-    .historical-image {
-      max-width: 90%;
-      max-height: 80%;
-      object-fit: contain;
-      border: 8px solid #fff;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      transform: rotate(1deg);
-    }
-    .image-caption {
-      position: absolute;
-      bottom: 2rem;
-      font-size: 0.9rem;
-      color: #555;
-      max-width: 80%;
-      text-align: center;
-      background-color: rgba(255, 255, 255, 0.8);
-      padding: 0.5rem 1rem;
-      border-radius: 4px;
-    }
-    .red-highlight {
-      color: #bb1010;
-      font-weight: 700;
-    }
-  </style>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>历史背景——华北之大，安放不下一张平静的书桌</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&amp;display=swap"
+        rel="stylesheet" />
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Noto Sans SC', sans-serif;
+        }
+
+        .slide-container {
+            position: relative;
+            width: 1280px;
+            min-height: 720px;
+            display: flex;
+            background-color: #f5f5f5;
+            overflow: hidden;
+        }
+
+        .left-column {
+            width: 50%;
+            padding: 3rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: #f9f9f9;
+        }
+
+        .right-column {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .title {
+            color: #bb1010;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            line-height: 1.2;
+        }
+
+        .section-title {
+            color: #bb1010;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .content-text {
+            font-size: 1.25rem;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .quote {
+            border-left: 4px solid #bb1010;
+            padding-left: 1rem;
+            margin: 1.5rem 0;
+            font-style: italic;
+            color: #333;
+        }
+
+        .quote-text {
+            font-size: 1.4rem;
+            line-height: 1.6;
+        }
+
+        .quote-source {
+            font-size: 1rem;
+            margin-top: 0.5rem;
+            color: #555;
+        }
+
+        .historical-image {
+            max-width: 90%;
+            max-height: 80%;
+            object-fit: contain;
+            border: 8px solid #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transform: rotate(1deg);
+        }
+
+        .image-caption {
+            position: absolute;
+            bottom: 2rem;
+            font-size: 0.9rem;
+            color: #555;
+            max-width: 80%;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+        }
+
+        .red-highlight {
+            color: #bb1010;
+            font-weight: 700;
+        }
+    </style>
 </head>
+
 <body>
-<div class="slide-container">
-<div class="left-column">
-<h1 class="title">历史背景——华北之大，安放不下一张平静的书桌</h1>
-<h2 class="section-title">外患</h2>
-<p class="content-text">1935年，日本帝国主义制造"华北事变"，策动"华北五省自治"，妄图吞并华北。</p>
-<h2 class="section-title">内忧</h2>
-<p class="content-text">国民党政府坚持"<span class="red-highlight">攘外必先安内</span>"，对日妥协退让。</p>
-<div class="quote">
-<p class="quote-text">"华北之大，已经安放不下一张平静的书桌了！"</p>
-<p class="quote-source">——清华大学救国会《告全国民众书》</p>
-</div>
-</div>
-<div class="right-column">
-<svg height="400" style="margin-bottom: 30px;" viewbox="0 0 500 400" width="500">
-<!-- 简化的华北地图轮廓 -->
-<path d="M120,50 L220,30 L310,60 L380,100 L420,180 L390,270 L330,310 L240,330 L150,320 L90,270 L70,200 L80,120 Z" fill="#e8e8e8" stroke="#666" stroke-width="2"></path>
-<!-- 标注主要城市 -->
-<circle cx="200" cy="180" fill="#bb1010" r="6"></circle>
-<text fill="#333" font-size="14" x="210" y="185">北平</text>
-<circle cx="240" cy="220" fill="#bb1010" r="6"></circle>
-<text fill="#333" font-size="14" x="250" y="225">天津</text>
-<circle cx="150" cy="260" fill="#333" r="4"></circle>
-<text fill="#333" font-size="12" x="160" y="265">石家庄</text>
-<circle cx="300" cy="160" fill="#333" r="4"></circle>
-<text fill="#333" font-size="12" x="310" y="165">承德</text>
-<circle cx="260" cy="120" fill="#333" r="4"></circle>
-<text fill="#333" font-size="12" x="270" y="125">张家口</text>
-<!-- 日军侵略方向箭头 -->
-<defs>
-<marker id="arrowhead" markerheight="7" markerwidth="10" orient="auto" refx="0" refy="3.5">
-<polygon fill="#bb1010" points="0 0, 10 3.5, 0 7"></polygon>
-</marker>
-</defs>
-<line marker-end="url(#arrowhead)" stroke="#bb1010" stroke-dasharray="5,3" stroke-width="3" x1="350" x2="290" y1="80" y2="120"></line>
-<line marker-end="url(#arrowhead)" stroke="#bb1010" stroke-dasharray="5,3" stroke-width="3" x1="380" x2="320" y1="150" y2="170"></line>
-<line marker-end="url(#arrowhead)" stroke="#bb1010" stroke-dasharray="5,3" stroke-width="3" x1="350" x2="280" y1="220" y2="220"></line>
-<!-- 地图标题 -->
-<text fill="#bb1010" font-size="16" font-weight="bold" x="120" y="40">1935年华北危局示意图</text>
-<!-- 日本侵略标记 -->
-<rect fill="#bb1010" height="10" width="20" x="340" y="40"></rect>
-<text fill="#333" font-size="12" x="365" y="50">日军侵略方向</text>
-</svg>
-<div class="image-caption">
-<p>1935年，日本不断加紧对华北的侵略步伐，通过军事侵略与政治操控，妄图使"华北五省"脱离中国，建立伪政权</p>
-</div>
-</div>
-</div>
+    <div class="slide-container">
+        <div class="left-column">
+            <h1 class="title">历史背景——华北之大，安放不下一张平静的书桌</h1>
+            <h2 class="section-title">外患</h2>
+            <p class="content-text">1935年，日本帝国主义制造"华北事变"，策动"华北五省自治"，妄图吞并华北。</p>
+            <h2 class="section-title">内忧</h2>
+            <p class="content-text">国民党政府坚持"<span class="red-highlight">攘外必先安内</span>"，对日妥协退让。</p>
+            <div class="quote">
+                <p class="quote-text">"华北之大，已经安放不下一张平静的书桌了！"</p>
+                <p class="quote-source">——清华大学救国会《告全国民众书》</p>
+            </div>
+        </div>
+        <div class="right-column">
+            <svg height="400" style="margin-bottom: 30px;" viewbox="0 0 500 400" width="500">
+                <!-- 简化的华北地图轮廓 -->
+                <path
+                    d="M120,50 L220,30 L310,60 L380,100 L420,180 L390,270 L330,310 L240,330 L150,320 L90,270 L70,200 L80,120 Z"
+                    fill="#e8e8e8" stroke="#666" stroke-width="2"></path>
+                <!-- 标注主要城市 -->
+                <circle cx="200" cy="180" fill="#bb1010" r="6"></circle>
+                <text fill="#333" font-size="14" x="210" y="185">北平</text>
+                <circle cx="240" cy="220" fill="#bb1010" r="6"></circle>
+                <text fill="#333" font-size="14" x="250" y="225">天津</text>
+                <circle cx="150" cy="260" fill="#333" r="4"></circle>
+                <text fill="#333" font-size="12" x="160" y="265">石家庄</text>
+                <circle cx="300" cy="160" fill="#333" r="4"></circle>
+                <text fill="#333" font-size="12" x="310" y="165">承德</text>
+                <circle cx="260" cy="120" fill="#333" r="4"></circle>
+                <text fill="#333" font-size="12" x="270" y="125">张家口</text>
+                <!-- 日军侵略方向箭头 -->
+                <defs>
+                    <marker id="arrowhead" markerheight="7" markerwidth="10" orient="auto" refx="0" refy="3.5">
+                        <polygon fill="#bb1010" points="0 0, 10 3.5, 0 7"></polygon>
+                    </marker>
+                </defs>
+                <line marker-end="url(#arrowhead)" stroke="#bb1010" stroke-dasharray="5,3" stroke-width="3" x1="350"
+                    x2="290" y1="80" y2="120"></line>
+                <line marker-end="url(#arrowhead)" stroke="#bb1010" stroke-dasharray="5,3" stroke-width="3" x1="380"
+                    x2="320" y1="150" y2="170"></line>
+                <line marker-end="url(#arrowhead)" stroke="#bb1010" stroke-dasharray="5,3" stroke-width="3" x1="350"
+                    x2="280" y1="220" y2="220"></line>
+                <!-- 地图标题 -->
+                <text fill="#bb1010" font-size="16" font-weight="bold" x="120" y="40">1935年华北危局示意图</text>
+                <!-- 日本侵略标记 -->
+                <rect fill="#bb1010" height="10" width="20" x="340" y="40"></rect>
+                <text fill="#333" font-size="12" x="365" y="50">日军侵略方向</text>
+            </svg>
+            <div class="image-caption">
+                <p>1935年，日本不断加紧对华北的侵略步伐，通过军事侵略与政治操控，妄图使"华北五省"脱离中国，建立伪政权</p>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>

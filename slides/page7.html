@@ -1,301 +1,350 @@
 <!DOCTYPE html>
 
 <html lang="zh-CN">
+
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>星星之火，可以燎原——全国响应</title>
-<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
-<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
-<style>
-    body, html {
-      margin: 0;
-      padding: 0;
-      font-family: 'Noto Sans SC', sans-serif;
-    }
-    .slide-container {
-      position: relative;
-      width: 1280px;
-      min-height: 720px;
-      overflow: hidden;
-      background-color: #f8f8f8;
-      display: flex;
-      flex-direction: column;
-    }
-    .header {
-      padding: 2rem 3rem 1rem;
-      background-color: #fff;
-      border-bottom: 4px solid #bb1010;
-    }
-    .title {
-      font-size: 2.5rem;
-      font-weight: 800;
-      color: #bb1010;
-      margin-bottom: 0.5rem;
-    }
-    .subtitle {
-      font-size: 1.25rem;
-      color: #555;
-      font-weight: 500;
-    }
-    .content {
-      display: flex;
-      flex: 1;
-      padding: 1.5rem;
-    }
-    .map-container {
-      flex: 3;
-      position: relative;
-      background-color: #fff;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-      padding: 1rem;
-      margin-right: 1.5rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .china-map {
-      width: 100%;
-      height: 100%;
-      max-height: 460px;
-      position: relative;
-    }
-    .map-pin {
-      position: absolute;
-      width: 16px;
-      height: 16px;
-      background-color: #bb1010;
-      border-radius: 50%;
-      border: 2px solid #fff;
-      box-shadow: 0 0 0 1px rgba(187, 16, 16, 0.3);
-      transform: translate(-50%, -50%);
-      z-index: 2;
-    }
-    .pin-label {
-      position: absolute;
-      white-space: nowrap;
-      font-size: 0.8rem;
-      font-weight: 700;
-      color: #333;
-      background-color: rgba(255, 255, 255, 0.8);
-      padding: 0.2rem 0.4rem;
-      border-radius: 4px;
-      transform: translate(-50%, 10px);
-    }
-    .info-container {
-      flex: 2;
-      display: flex;
-      flex-direction: column;
-    }
-    .responses, .support {
-      background-color: #fff;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-      padding: 1.25rem;
-      margin-bottom: 1rem;
-      flex: 1;
-    }
-    .section-title {
-      font-size: 1.3rem;
-      font-weight: 700;
-      color: #bb1010;
-      margin-bottom: 1rem;
-      padding-bottom: 0.5rem;
-      border-bottom: 2px solid rgba(187, 16, 16, 0.2);
-      display: flex;
-      align-items: center;
-    }
-    .section-title i {
-      margin-right: 0.5rem;
-    }
-    .list-item {
-      display: flex;
-      margin-bottom: 0.8rem;
-    }
-    .city-name {
-      font-weight: 700;
-      color: #333;
-      min-width: 70px;
-    }
-    .city-desc {
-      color: #555;
-    }
-    .newspaper-clipping {
-      background-color: #f3f3f3;
-      border: 1px solid #ddd;
-      padding: 0.5rem 1rem;
-      font-size: 0.9rem;
-      color: #333;
-      margin: 0.5rem 0;
-      border-radius: 4px;
-      position: relative;
-      font-style: italic;
-    }
-    .newspaper-clipping::before {
-      content: '"';
-      position: absolute;
-      left: 5px;
-      top: 0;
-      font-size: 1.5rem;
-      color: #bb1010;
-      opacity: 0.4;
-    }
-    .newspaper-clipping::after {
-      content: '"';
-      position: absolute;
-      right: 5px;
-      bottom: -10px;
-      font-size: 1.5rem;
-      color: #bb1010;
-      opacity: 0.4;
-    }
-    .quote-source {
-      text-align: right;
-      font-size: 0.8rem;
-      color: #777;
-      margin-top: 0.3rem;
-    }
-    .meaning-section {
-      background-color: rgba(187, 16, 16, 0.1);
-      border-left: 4px solid #bb1010;
-      padding: 1rem 1.5rem;
-      border-radius: 0 4px 4px 0;
-      margin-top: auto;
-    }
-    .meaning-title {
-      font-weight: 700;
-      color: #bb1010;
-      font-size: 1.1rem;
-      margin-bottom: 0.5rem;
-    }
-    .meaning-content {
-      font-size: 1rem;
-      color: #333;
-    }
-    .highlight {
-      color: #bb1010;
-      font-weight: 700;
-    }
-  </style>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>星星之火，可以燎原——全国响应</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet" />
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Noto Sans SC', sans-serif;
+        }
+
+        .slide-container {
+            position: relative;
+            width: 1280px;
+            min-height: 720px;
+            overflow: hidden;
+            background-color: #f8f8f8;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            padding: 2rem 3rem 1rem;
+            background-color: #fff;
+            border-bottom: 4px solid #bb1010;
+        }
+
+        .title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #bb1010;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            font-size: 1.25rem;
+            color: #555;
+            font-weight: 500;
+        }
+
+        .content {
+            display: flex;
+            flex: 1;
+            padding: 1.5rem;
+        }
+
+        .map-container {
+            flex: 3;
+            position: relative;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            padding: 1rem;
+            margin-right: 1.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .china-map {
+            width: 100%;
+            height: 100%;
+            max-height: 460px;
+            position: relative;
+        }
+
+        .map-pin {
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            background-color: #bb1010;
+            border-radius: 50%;
+            border: 2px solid #fff;
+            box-shadow: 0 0 0 1px rgba(187, 16, 16, 0.3);
+            transform: translate(-50%, -50%);
+            z-index: 2;
+        }
+
+        .pin-label {
+            position: absolute;
+            white-space: nowrap;
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: #333;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            transform: translate(-50%, 10px);
+        }
+
+        .info-container {
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .responses,
+        .support {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            padding: 1.25rem;
+            margin-bottom: 1rem;
+            flex: 1;
+        }
+
+        .section-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #bb1010;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid rgba(187, 16, 16, 0.2);
+            display: flex;
+            align-items: center;
+        }
+
+        .section-title i {
+            margin-right: 0.5rem;
+        }
+
+        .list-item {
+            display: flex;
+            margin-bottom: 0.8rem;
+        }
+
+        .city-name {
+            font-weight: 700;
+            color: #333;
+            min-width: 70px;
+        }
+
+        .city-desc {
+            color: #555;
+        }
+
+        .newspaper-clipping {
+            background-color: #f3f3f3;
+            border: 1px solid #ddd;
+            padding: 0.5rem 1rem;
+            font-size: 0.9rem;
+            color: #333;
+            margin: 0.5rem 0;
+            border-radius: 4px;
+            position: relative;
+            font-style: italic;
+        }
+
+        .newspaper-clipping::before {
+            content: '"';
+            position: absolute;
+            left: 5px;
+            top: 0;
+            font-size: 1.5rem;
+            color: #bb1010;
+            opacity: 0.4;
+        }
+
+        .newspaper-clipping::after {
+            content: '"';
+            position: absolute;
+            right: 5px;
+            bottom: -10px;
+            font-size: 1.5rem;
+            color: #bb1010;
+            opacity: 0.4;
+        }
+
+        .quote-source {
+            text-align: right;
+            font-size: 0.8rem;
+            color: #777;
+            margin-top: 0.3rem;
+        }
+
+        .meaning-section {
+            background-color: rgba(187, 16, 16, 0.1);
+            border-left: 4px solid #bb1010;
+            padding: 1rem 1.5rem;
+            border-radius: 0 4px 4px 0;
+            margin-top: auto;
+        }
+
+        .meaning-title {
+            font-weight: 700;
+            color: #bb1010;
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .meaning-content {
+            font-size: 1rem;
+            color: #333;
+        }
+
+        .highlight {
+            color: #bb1010;
+            font-weight: 700;
+        }
+    </style>
 </head>
+
 <body>
-<div class="slide-container">
-<div class="header">
-<h1 class="title">星星之火，可以燎原——全国响应</h1>
-<p class="subtitle">北平的呐喊迅速传遍全国，引发抗日救亡运动的新高潮</p>
-</div>
-<div class="content">
-<div class="map-container">
-<div class="china-map">
-<!-- 简化的中国地图轮廓 SVG -->
-<svg height="100%" viewbox="0 0 600 500" width="100%">
-<path d="M150,80 L220,60 L290,50 L360,70 L410,90 L460,120 L500,160 L530,220 L540,280 L520,340 L490,380 L450,410 L400,430 L350,440 L280,445 L220,430 L170,410 L130,380 L100,340 L80,290 L70,230 L90,170 L120,120 Z" fill="#f0f0f0" stroke="#ccc" stroke-width="2"></path>
-<!-- 省份边界线 -->
-<path d="M290,50 L280,120 L220,180 L230,240 L270,280 L310,330 L350,440" fill="none" stroke="#ddd" stroke-width="1.5"></path>
-<path d="M410,90 L350,150 L310,200 L320,250 L350,300" fill="none" stroke="#ddd" stroke-width="1.5"></path>
-<path d="M220,60 L180,130 L190,210 L250,260 L290,290" fill="none" stroke="#ddd" stroke-width="1.5"></path>
-<path d="M180,410 L220,350 L270,330 L330,360 L400,370" fill="none" stroke="#ddd" stroke-width="1.5"></path>
-<!-- 地图标题 -->
-<text fill="#bb1010" font-size="16" font-weight="bold" x="160" y="40">一二·九运动全国响应示意图</text>
-<!-- 长江黄河简化 -->
-<path d="M150,280 L230,300 L320,310 L400,330 L480,350" fill="none" stroke="#6fafd8" stroke-dasharray="2,2" stroke-opacity="0.6" stroke-width="2"></path>
-<path d="M120,200 L190,230 L250,220 L350,230 L450,250" fill="none" stroke="#f0ca00" stroke-dasharray="2,2" stroke-opacity="0.6" stroke-width="2"></path>
-<!-- 标注主要城市及响应情况 -->
-<g>
-<!-- 北平 -->
-<circle cx="260" cy="180" fill="#bb1010" r="8"></circle>
-<text fill="#333" font-size="14" font-weight="bold" text-anchor="middle" x="260" y="160">北平</text>
-<text fill="#333" font-size="12" text-anchor="middle" x="260" y="200">运动发源地</text>
-<!-- 天津 -->
-<circle cx="280" cy="200" fill="#bb1010" r="6"></circle>
-<text fill="#333" font-size="12" font-weight="bold" x="300" y="200">天津</text>
-<!-- 上海 -->
-<circle cx="380" cy="320" fill="#bb1010" r="6"></circle>
-<text fill="#333" font-size="12" font-weight="bold" x="400" y="320">上海</text>
-<!-- 南京 -->
-<circle cx="350" cy="330" fill="#bb1010" r="6"></circle>
-<text fill="#333" font-size="12" font-weight="bold" x="350" y="350">南京</text>
-<!-- 武汉 -->
-<circle cx="320" cy="310" fill="#bb1010" r="6"></circle>
-<text fill="#333" font-size="12" font-weight="bold" x="300" y="310">武汉</text>
-<!-- 广州 -->
-<circle cx="320" cy="400" fill="#bb1010" r="4"></circle>
-<text fill="#333" font-size="11" x="320" y="415">广州</text>
-<!-- 西安 -->
-<circle cx="220" cy="240" fill="#bb1010" r="4"></circle>
-<text fill="#333" font-size="11" x="200" y="240">西安</text>
-<!-- 青岛 -->
-<circle cx="320" cy="230" fill="#bb1010" r="4"></circle>
-<text fill="#333" font-size="11" x="340" y="230">青岛</text>
-<!-- 响应方向箭头 -->
-<defs>
-<marker id="arrowhead" markerheight="7" markerwidth="10" orient="auto" refx="0" refy="3.5">
-<polygon fill="#bb1010" points="0 0, 10 3.5, 0 7"></polygon>
-</marker>
-</defs>
-<line marker-end="url(#arrowhead)" stroke="#bb1010" stroke-dasharray="3,2" stroke-width="2" x1="260" x2="280" y1="180" y2="200"></line>
-<line marker-end="url(#arrowhead)" stroke="#bb1010" stroke-dasharray="3,2" stroke-width="2" x1="260" x2="320" y1="180" y2="230"></line>
-<line marker-end="url(#arrowhead)" stroke="#bb1010" stroke-dasharray="3,2" stroke-width="2" x1="260" x2="350" y1="180" y2="330"></line>
-<line marker-end="url(#arrowhead)" stroke="#bb1010" stroke-dasharray="3,2" stroke-width="2" x1="260" x2="380" y1="180" y2="320"></line>
-<line marker-end="url(#arrowhead)" stroke="#bb1010" stroke-dasharray="3,2" stroke-width="2" x1="260" x2="320" y1="180" y2="310"></line>
-<line marker-end="url(#arrowhead)" stroke="#bb1010" stroke-dasharray="3,2" stroke-width="2" x1="260" x2="220" y1="180" y2="240"></line>
-<line marker-end="url(#arrowhead)" stroke="#bb1010" stroke-dasharray="3,2" stroke-width="2" x1="260" x2="320" y1="180" y2="400"></line>
-<!-- 图例 -->
-<rect fill="#bb1010" height="10" width="10" x="450" y="400"></rect>
-<text fill="#333" font-size="12" x="465" y="410">响应城市</text>
-<line stroke="#bb1010" stroke-dasharray="3,2" stroke-width="2" x1="450" x2="470" y1="430" y2="430"></line>
-<text fill="#333" font-size="12" x="475" y="435">响应方向</text>
-</g>
-</svg>
-</div>
-</div>
-<div class="info-container">
-<div class="responses">
-<h2 class="section-title"><i class="fas fa-university"></i>各地学生响应</h2>
-<div class="list-item">
-<p class="city-name">天津：</p>
-<p class="city-desc">学生举行游行示威，罢课声援北平学生抗日行动</p>
-</div>
-<div class="list-item">
-<p class="city-name">上海：</p>
-<p class="city-desc">数万学生举行示威游行，高呼"停止内战，一致对外"的口号</p>
-</div>
-<div class="list-item">
-<p class="city-name">南京：</p>
-<p class="city-desc">各校学生走上街头，直接向国民政府请愿</p>
-</div>
-<div class="list-item">
-<p class="city-name">武汉：</p>
-<p class="city-desc">学生组织抗日救国会，开展宣传活动</p>
-</div>
-<div class="newspaper-clipping">
-<p>北平学生运动消息传来，犹如平地一声雷，惊醒了全国沉睡的青年。我们不能再沉默了，中华民族到了最危急的时刻！</p>
-<p class="quote-source">——《救国报》社论，1935年12月</p>
-</div>
-</div>
-<div class="support">
-<h2 class="section-title"><i class="fas fa-bullhorn"></i>社会各界支持</h2>
-<div class="list-item">
-<p class="city-name">鲁迅：</p>
-<p class="city-desc">发表文章声援学生爱国行动，称赞"青年是民族的希望"</p>
-</div>
-<div class="list-item">
-<p class="city-name">宋庆龄：</p>
-<p class="city-desc">公开发表宣言，支持学生抗日救亡运动</p>
-</div>
-<div class="list-item">
-<p class="city-name">各界人士：</p>
-<p class="city-desc">文化界、教育界、工商界等各界爱国人士纷纷表态支持</p>
-</div>
-</div>
-<div class="meaning-section">
-<h3 class="meaning-title">历史意义</h3>
-<p class="meaning-content">一二·九运动打破了"<span class="highlight">万马齐喑</span>"的沉闷政治局面，使抗日救亡运动在全国掀起高潮，推动了全民族抗战意识的觉醒，为抗日民族统一战线的形成奠定了群众基础。</p>
-</div>
-</div>
-</div>
-</div>
+    <div class="slide-container">
+        <div class="header">
+            <h1 class="title">星星之火，可以燎原——全国响应</h1>
+            <p class="subtitle">北平的呐喊迅速传遍全国，引发抗日救亡运动的新高潮</p>
+        </div>
+        <div class="content">
+            <div class="map-container">
+                <div class="china-map">
+                    <!-- 简化的中国地图轮廓 SVG -->
+                    <svg height="100%" viewbox="0 0 600 500" width="100%">
+                        <path
+                            d="M150,80 L220,60 L290,50 L360,70 L410,90 L460,120 L500,160 L530,220 L540,280 L520,340 L490,380 L450,410 L400,430 L350,440 L280,445 L220,430 L170,410 L130,380 L100,340 L80,290 L70,230 L90,170 L120,120 Z"
+                            fill="#f0f0f0" stroke="#ccc" stroke-width="2"></path>
+                        <!-- 省份边界线 -->
+                        <path d="M290,50 L280,120 L220,180 L230,240 L270,280 L310,330 L350,440" fill="none"
+                            stroke="#ddd" stroke-width="1.5"></path>
+                        <path d="M410,90 L350,150 L310,200 L320,250 L350,300" fill="none" stroke="#ddd"
+                            stroke-width="1.5"></path>
+                        <path d="M220,60 L180,130 L190,210 L250,260 L290,290" fill="none" stroke="#ddd"
+                            stroke-width="1.5"></path>
+                        <path d="M180,410 L220,350 L270,330 L330,360 L400,370" fill="none" stroke="#ddd"
+                            stroke-width="1.5"></path>
+                        <!-- 地图标题 -->
+                        <text fill="#bb1010" font-size="16" font-weight="bold" x="160" y="40">一二·九运动全国响应示意图</text>
+                        <!-- 长江黄河简化 -->
+                        <path d="M150,280 L230,300 L320,310 L400,330 L480,350" fill="none" stroke="#6fafd8"
+                            stroke-dasharray="2,2" stroke-opacity="0.6" stroke-width="2"></path>
+                        <path d="M120,200 L190,230 L250,220 L350,230 L450,250" fill="none" stroke="#f0ca00"
+                            stroke-dasharray="2,2" stroke-opacity="0.6" stroke-width="2"></path>
+                        <!-- 标注主要城市及响应情况 -->
+                        <g>
+                            <!-- 北平 -->
+                            <circle cx="260" cy="180" fill="#bb1010" r="8"></circle>
+                            <text fill="#333" font-size="14" font-weight="bold" text-anchor="middle" x="260"
+                                y="160">北平</text>
+                            <text fill="#333" font-size="12" text-anchor="middle" x="260" y="200">运动发源地</text>
+                            <!-- 天津 -->
+                            <circle cx="280" cy="200" fill="#bb1010" r="6"></circle>
+                            <text fill="#333" font-size="12" font-weight="bold" x="300" y="200">天津</text>
+                            <!-- 上海 -->
+                            <circle cx="380" cy="320" fill="#bb1010" r="6"></circle>
+                            <text fill="#333" font-size="12" font-weight="bold" x="400" y="320">上海</text>
+                            <!-- 南京 -->
+                            <circle cx="350" cy="330" fill="#bb1010" r="6"></circle>
+                            <text fill="#333" font-size="12" font-weight="bold" x="350" y="350">南京</text>
+                            <!-- 武汉 -->
+                            <circle cx="320" cy="310" fill="#bb1010" r="6"></circle>
+                            <text fill="#333" font-size="12" font-weight="bold" x="300" y="310">武汉</text>
+                            <!-- 广州 -->
+                            <circle cx="320" cy="400" fill="#bb1010" r="4"></circle>
+                            <text fill="#333" font-size="11" x="320" y="415">广州</text>
+                            <!-- 西安 -->
+                            <circle cx="220" cy="240" fill="#bb1010" r="4"></circle>
+                            <text fill="#333" font-size="11" x="200" y="240">西安</text>
+                            <!-- 青岛 -->
+                            <circle cx="320" cy="230" fill="#bb1010" r="4"></circle>
+                            <text fill="#333" font-size="11" x="340" y="230">青岛</text>
+                            <!-- 响应方向箭头 -->
+                            <defs>
+                                <marker id="arrowhead" markerheight="7" markerwidth="10" orient="auto" refx="0"
+                                    refy="3.5">
+                                    <polygon fill="#bb1010" points="0 0, 10 3.5, 0 7"></polygon>
+                                </marker>
+                            </defs>
+                            <line marker-end="url(#arrowhead)" stroke="#bb1010" stroke-dasharray="3,2" stroke-width="2"
+                                x1="260" x2="280" y1="180" y2="200"></line>
+                            <line marker-end="url(#arrowhead)" stroke="#bb1010" stroke-dasharray="3,2" stroke-width="2"
+                                x1="260" x2="320" y1="180" y2="230"></line>
+                            <line marker-end="url(#arrowhead)" stroke="#bb1010" stroke-dasharray="3,2" stroke-width="2"
+                                x1="260" x2="350" y1="180" y2="330"></line>
+                            <line marker-end="url(#arrowhead)" stroke="#bb1010" stroke-dasharray="3,2" stroke-width="2"
+                                x1="260" x2="380" y1="180" y2="320"></line>
+                            <line marker-end="url(#arrowhead)" stroke="#bb1010" stroke-dasharray="3,2" stroke-width="2"
+                                x1="260" x2="320" y1="180" y2="310"></line>
+                            <line marker-end="url(#arrowhead)" stroke="#bb1010" stroke-dasharray="3,2" stroke-width="2"
+                                x1="260" x2="220" y1="180" y2="240"></line>
+                            <line marker-end="url(#arrowhead)" stroke="#bb1010" stroke-dasharray="3,2" stroke-width="2"
+                                x1="260" x2="320" y1="180" y2="400"></line>
+                            <!-- 图例 -->
+                            <rect fill="#bb1010" height="10" width="10" x="450" y="400"></rect>
+                            <text fill="#333" font-size="12" x="465" y="410">响应城市</text>
+                            <line stroke="#bb1010" stroke-dasharray="3,2" stroke-width="2" x1="450" x2="470" y1="430"
+                                y2="430"></line>
+                            <text fill="#333" font-size="12" x="475" y="435">响应方向</text>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+            <div class="info-container">
+                <div class="responses">
+                    <h2 class="section-title"><i class="fas fa-university"></i>各地学生响应</h2>
+                    <div class="list-item">
+                        <p class="city-name">天津：</p>
+                        <p class="city-desc">学生举行游行示威，罢课声援北平学生抗日行动</p>
+                    </div>
+                    <div class="list-item">
+                        <p class="city-name">上海：</p>
+                        <p class="city-desc">数万学生举行示威游行，高呼"停止内战，一致对外"的口号</p>
+                    </div>
+                    <div class="list-item">
+                        <p class="city-name">南京：</p>
+                        <p class="city-desc">各校学生走上街头，直接向国民政府请愿</p>
+                    </div>
+                    <div class="list-item">
+                        <p class="city-name">武汉：</p>
+                        <p class="city-desc">学生组织抗日救国会，开展宣传活动</p>
+                    </div>
+                    <div class="newspaper-clipping">
+                        <p>北平学生运动消息传来，犹如平地一声雷，惊醒了全国沉睡的青年。我们不能再沉默了，中华民族到了最危急的时刻！</p>
+                        <p class="quote-source">——《救国报》社论，1935年12月</p>
+                    </div>
+                </div>
+                <div class="support">
+                    <h2 class="section-title"><i class="fas fa-bullhorn"></i>社会各界支持</h2>
+                    <div class="list-item">
+                        <p class="city-name">鲁迅：</p>
+                        <p class="city-desc">发表文章声援学生爱国行动，称赞"青年是民族的希望"</p>
+                    </div>
+                    <div class="list-item">
+                        <p class="city-name">宋庆龄：</p>
+                        <p class="city-desc">公开发表宣言，支持学生抗日救亡运动</p>
+                    </div>
+                    <div class="list-item">
+                        <p class="city-name">各界人士：</p>
+                        <p class="city-desc">文化界、教育界、工商界等各界爱国人士纷纷表态支持</p>
+                    </div>
+                </div>
+                <div class="meaning-section">
+                    <h3 class="meaning-title">历史意义</h3>
+                    <p class="meaning-content">一二·九运动打破了"<span
+                            class="highlight">万马齐喑</span>"的沉闷政治局面，使抗日救亡运动在全国掀起高潮，推动了全民族抗战意识的觉醒，为抗日民族统一战线的形成奠定了群众基础。</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>

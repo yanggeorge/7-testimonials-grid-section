@@ -1,86 +1,99 @@
 <!DOCTYPE html>
 
 <html lang="zh-CN">
+
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>一二·九运动</title>
-<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
-<style>
-    body, html {
-      margin: 0;
-      padding: 0;
-      font-family: 'Noto Sans SC', sans-serif;
-    }
-    .slide-container {
-      position: relative;
-      width: 1280px;
-      min-height: 720px;
-      overflow: hidden;
-    }
-    .background-image {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      filter: brightness(0.8);
-    }
-    .overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(187, 16, 16, 0.65);
-    }
-    .content {
-      position: relative;
-      z-index: 10;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100%;
-      text-align: center;
-      padding: 2rem;
-      color: white;
-    }
-    .main-title {
-      font-size: 5rem;
-      font-weight: 900;
-      margin-bottom: 2rem;
-      line-height: 1.2;
-      text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
-    }
-    .subtitle {
-      font-size: 2rem;
-      font-weight: 500;
-      margin-bottom: 4rem;
-      max-width: 80%;
-      line-height: 1.5;
-      text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
-    }
-    .presenter-info {
-      font-size: 1.25rem;
-      font-weight: 400;
-      position: absolute;
-      bottom: 2rem;
-      text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
-    }
-  </style>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>一二·九运动</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&amp;display=swap"
+        rel="stylesheet" />
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Noto Sans SC', sans-serif;
+        }
+
+        .slide-container {
+            position: relative;
+            width: 1280px;
+            min-height: 720px;
+            overflow: hidden;
+        }
+
+        .background-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(0.8);
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(187, 16, 16, 0.65);
+        }
+
+        .content {
+            position: relative;
+            z-index: 10;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            text-align: center;
+            padding: 2rem;
+            color: white;
+        }
+
+        .main-title {
+            font-size: 5rem;
+            font-weight: 900;
+            margin-bottom: 2rem;
+            line-height: 1.2;
+            text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .subtitle {
+            font-size: 2rem;
+            font-weight: 500;
+            margin-bottom: 4rem;
+            max-width: 80%;
+            line-height: 1.5;
+            text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        .presenter-info {
+            font-size: 1.25rem;
+            font-weight: 400;
+            position: absolute;
+            bottom: 2rem;
+            text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+    </style>
 </head>
+
 <body>
-<div class="slide-container">
-<img alt="1935年学生游行" class="background-image" src="https://page.gensparksite.com/slides_images/cfb4efe504dfa3c1203829a6e3f7fabb.webp"/>
-<div class="overlay"></div>
-<div class="content">
-<h1 class="main-title">一二·九运动</h1>
-<p class="subtitle">掀起抗日救亡怒潮的伟大爱国运动</p>
-<p class="presenter-info">[您的名字] / 202X年X月X日</p>
-</div>
-</div>
+    <div class="slide-container">
+        <img alt="1935年学生游行" class="background-image"
+            src="https://page.gensparksite.com/slides_images/cfb4efe504dfa3c1203829a6e3f7fabb.webp" />
+        <div class="overlay"></div>
+        <div class="content">
+            <h1 class="main-title">一二·九运动</h1>
+            <p class="subtitle">掀起抗日救亡怒潮的伟大爱国运动</p>
+            <p class="presenter-info">[您的名字] / 202X年X月X日</p>
+        </div>
+    </div>
 </body>
+
 </html>

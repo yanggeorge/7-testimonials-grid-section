@@ -1,157 +1,179 @@
 <!DOCTYPE html>
 
 <html lang="zh-CN">
+
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>运动爆发——12月9日的怒吼</title>
-<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
-<style>
-    body, html {
-      margin: 0;
-      padding: 0;
-      font-family: 'Noto Sans SC', sans-serif;
-    }
-    .slide-container {
-      position: relative;
-      width: 1280px;
-      min-height: 720px;
-      overflow: hidden;
-    }
-    .background-image {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      filter: grayscale(100%) brightness(0.7);
-    }
-    .overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.65);
-    }
-    .content {
-      position: relative;
-      z-index: 10;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      height: 100%;
-      padding: 3rem 4rem;
-      color: white;
-    }
-    .header {
-      margin-bottom: 2rem;
-    }
-    .title {
-      font-size: 3rem;
-      font-weight: 800;
-      margin-bottom: 1rem;
-      color: white;
-      text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
-    }
-    .subtitle {
-      font-size: 1.5rem;
-      font-weight: 500;
-      color: #f8f8f8;
-      text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
-    }
-    .event-details {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: flex-start;
-    }
-    .details-box {
-      background-color: rgba(187, 16, 16, 0.75);
-      padding: 1.5rem 2rem;
-      border-radius: 8px;
-      width: 45%;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    }
-    .details-title {
-      font-size: 1.4rem;
-      font-weight: 700;
-      margin-bottom: 1rem;
-      border-bottom: 2px solid rgba(255, 255, 255, 0.4);
-      padding-bottom: 0.5rem;
-    }
-    .details-content {
-      font-size: 1.2rem;
-      line-height: 1.6;
-    }
-    .bullet-list {
-      list-style-type: none;
-      padding-left: 0;
-      margin: 0;
-    }
-    .bullet-list li {
-      position: relative;
-      padding-left: 1.5rem;
-      margin-bottom: 0.8rem;
-    }
-    .bullet-list li:before {
-      content: "•";
-      position: absolute;
-      left: 0;
-      color: #f8f8f8;
-      font-weight: bold;
-      font-size: 1.2rem;
-    }
-    .image-credit {
-      position: absolute;
-      bottom: 1rem;
-      right: 1rem;
-      font-size: 0.8rem;
-      color: rgba(255, 255, 255, 0.7);
-      z-index: 10;
-    }
-    .highlight {
-      color: #ffcc00;
-      font-weight: 700;
-    }
-  </style>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>运动爆发——12月9日的怒吼</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&amp;display=swap"
+        rel="stylesheet" />
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Noto Sans SC', sans-serif;
+        }
+
+        .slide-container {
+            position: relative;
+            width: 1280px;
+            min-height: 720px;
+            overflow: hidden;
+        }
+
+        .background-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: grayscale(100%) brightness(0.7);
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.65);
+        }
+
+        .content {
+            position: relative;
+            z-index: 10;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            padding: 3rem 4rem;
+            color: white;
+        }
+
+        .header {
+            margin-bottom: 2rem;
+        }
+
+        .title {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            color: white;
+            text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: #f8f8f8;
+            text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        .event-details {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .details-box {
+            background-color: rgba(187, 16, 16, 0.75);
+            padding: 1.5rem 2rem;
+            border-radius: 8px;
+            width: 45%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .details-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+            padding-bottom: 0.5rem;
+        }
+
+        .details-content {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        .bullet-list {
+            list-style-type: none;
+            padding-left: 0;
+            margin: 0;
+        }
+
+        .bullet-list li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .bullet-list li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #f8f8f8;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .image-credit {
+            position: absolute;
+            bottom: 1rem;
+            right: 1rem;
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.7);
+            z-index: 10;
+        }
+
+        .highlight {
+            color: #ffcc00;
+            font-weight: 700;
+        }
+    </style>
 </head>
+
 <body>
-<div class="slide-container">
-<img alt="1935年12月9日北平学生游行" class="background-image" src="https://page.gensparksite.com/slides_images/6136be19b821f591a01617420537c591.webp"/>
-<div class="overlay"></div>
-<div class="content">
-<div class="header">
-<h1 class="title">运动爆发——12月9日的怒吼</h1>
-<p class="subtitle">一个注定载入史册的日子</p>
-</div>
-<div class="event-details">
-<div class="details-box">
-<h2 class="details-title">时间与地点</h2>
-<div class="details-content">
-<ul class="bullet-list">
-<li><span class="highlight">时间</span>：1935年12月9日</li>
-<li><span class="highlight">地点</span>：北平（今北京）新华门前</li>
-<li><span class="highlight">规模</span>：数千名大中专院校学生</li>
-</ul>
-</div>
-</div>
-<div class="details-box">
-<h2 class="details-title">事件经过</h2>
-<div class="details-content">
-<ul class="bullet-list">
-<li>在中共地下党领导下，北平各大中专院校学生走上街头</li>
-<li>向国民党当局请愿，反对设立"冀察政务委员会"</li>
-<li>遭遇军警阻拦，甚至是大刀和水龙头的镇压</li>
-<li>学生们高呼"停止内战，一致对外！"等口号，坚持抗争</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<p class="image-credit">图片：1935年12月9日，北平学生抗日救亡游行</p>
-</div>
+    <div class="slide-container">
+        <img alt="1935年12月9日北平学生游行" class="background-image"
+            src="https://page.gensparksite.com/slides_images/6136be19b821f591a01617420537c591.webp" />
+        <div class="overlay"></div>
+        <div class="content">
+            <div class="header">
+                <h1 class="title">运动爆发——12月9日的怒吼</h1>
+                <p class="subtitle">一个注定载入史册的日子</p>
+            </div>
+            <div class="event-details">
+                <div class="details-box">
+                    <h2 class="details-title">时间与地点</h2>
+                    <div class="details-content">
+                        <ul class="bullet-list">
+                            <li><span class="highlight">时间</span>：1935年12月9日</li>
+                            <li><span class="highlight">地点</span>：北平（今北京）新华门前</li>
+                            <li><span class="highlight">规模</span>：数千名大中专院校学生</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="details-box">
+                    <h2 class="details-title">事件经过</h2>
+                    <div class="details-content">
+                        <ul class="bullet-list">
+                            <li>在中共地下党领导下，北平各大中专院校学生走上街头</li>
+                            <li>向国民党当局请愿，反对设立"冀察政务委员会"</li>
+                            <li>遭遇军警阻拦，甚至是大刀和水龙头的镇压</li>
+                            <li>学生们高呼"停止内战，一致对外！"等口号，坚持抗争</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="image-credit">图片：1935年12月9日，北平学生抗日救亡游行</p>
+    </div>
 </body>
+
 </html>
