@@ -58,13 +58,15 @@ main {
   margin-top: 73px;
   margin-bottom: 73px;
   gap: var(--spacing-400);
+  max-width: 305px;
 }
 
 .card {
-  max-width: 305px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: flex-start;
   gap: var(--spacing-200);
   padding: var(--spacing-400);
   border-radius: 8px;
@@ -195,4 +197,32 @@ main {
 }
 .kira .desc {
   color: var(--color-grey-400);
+}
+
+@media (min-width: 768px) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 647px;
+    align-items: stretch;
+  }
+
+  .card {
+    justify-content: flex-start;
+  }
+
+  .daniel {
+    grid-row: 1;
+    grid-column: span 2;
+  }
+
+  .patrick {
+    grid-row: 3;
+    grid-column: span 2;
+  }
+
+  .kira {
+    grid-row: 4;
+    grid-column: span 2;
+  }
 }
