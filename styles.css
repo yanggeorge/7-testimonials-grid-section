@@ -206,7 +206,7 @@ main {
     max-width: 647px;
     align-items: stretch;
     /* align-content: start。这就告诉 Grid：“如果容器很高，请把所有行都堆在顶部，不要把它们拉伸来填满容器。” */
-    align-content: start;
+    align-content: center;
   }
 
   .card {
